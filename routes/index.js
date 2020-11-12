@@ -23,11 +23,21 @@ router.post('/addUser', function (req, res) {
     profession: req.body.profession
   }
   connection.query("INSERT INTO users set ?", userdata, function (err, result) {
-    if(err) throw err;
+    if (err) throw err;
     res.redirect('/');
     console.log("Data Inserted!");
   });
 
+});
+
+router.get('/deleteUser/:id', function (req,res) {
+
+  var userid = req.params.id;
+
+  connection.query("DELETE FROM users WHERE id = ?",[userid],function (err, rows) {
+    if (err) throw err;
+    res.redirect('/');
+  });
 });
 
 module.exports = router;

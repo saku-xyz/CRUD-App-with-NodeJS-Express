@@ -55,8 +55,8 @@
                         <td>{{this.email}}</td>
                         <td>{{this.profession}}</td>
                         <td>
-                            <button class="btn btn-sm btn-primary">Edit</button>
-                            <button class="btn btn-sm btn-danger">Delete</button>
+                            <a><button class="btn btn-sm btn-primary">Edit</button></a>
+                            <a href="/deleteUser/{{ this.id }}"><button class="btn btn-sm btn-danger">Delete</button></a>
                         </td>
                     </tr>
                     {{/each}}
