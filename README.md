@@ -15,14 +15,14 @@ The quickest way to get started with express is to utilize the executable `expre
 
 #### Clone the Repo : https://github.com/saku97/CRUD-App-with-NodeJS-Express/
 
-### Import crud-app-experssjs.sql file into your mysql server.
+#### Import crud-app-experssjs.sql file into your mysql server.
 
-### Install dependencies:
+#### Install dependencies:
 
 ```bash
 $ npm install
 ```
-### Start Start ExpressJS app
+#### Start Start ExpressJS app
 
 ```bash
 $ npm start
